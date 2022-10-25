@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../img/back.png);
+    height: 100%;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header .fa-bars-icon{
+    width: 100%;
+    text-align: right;
+    font-size: 24px;
+    display: none;
+}
+
+
+header ul{
+    width: 594px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 270px auto auto; 
+}
+
+.products{
+    height: 70px;
+    width: 228px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(121, 179, 49, 1);
+    border-radius: 0px 36px 0px 36px;
+}
+
+.stores{
+    height: 70px;
+    width: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 0px 36px 0px 36px;
+}
+
+.shop{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 0px 36px 0px 36px;
+}
+
+header li a{
+    color: black;
+    padding: 23px 26px;
+}
+
+.products a{
+    color: white;
+}
+
+.stores:hover a, .shop:hover a{
+    color: white;
+}
+
+.stores:hover, .shop:hover{
+    background-color: rgba(121, 179, 49, 1);
+}
+
+
+.sale-count{
+    width: 420px;
+    height: 188px;
+    margin: 94px 220px auto auto;
+    position: relative;
+}
+
+.ball{
+    width: 32px;
+    height: 32px;
+    background-color: rgba(121, 179, 49, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 4s infinite;
+}
+
+.sale-count .sale-text{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.time{
+    font-size:36px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+
+.tree{
+    width: 1060px;
+    height: 500px;
+    margin: 140px 42px auto auto;
+    position: relative;
+}
+
+
+.line{
+    height: 430px;
+    width: 1px;
+    background-color: rgba(196, 196, 196, 1);
+    position: absolute;
+    bottom: 0;
+    left: 530px;
+}
+
+.tree-leaf0{
+    width: 530px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tree-leaf0 p{
+    width: 420px;
+    height: 48px;
+    margin-left: 56px;
+    margin-top: 10px;
+}
+
+.leaf0{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 36px 0px 36px;
+    background-color: rgba(196, 196, 196, 1);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.tree-leaf1{
+    width: 530px;
+    height: 70px;
+    position: absolute;
+    top: 112px;
+    right: 0;
+}
+
+.tree-leaf1 .leaf{
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.tree-leaf1 p{
+    width: 420px;
+    height: 48px;
+    margin-left: 86px;
+    margin-top: 10px;
+}
+.leaf1{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 36px 0px 36px;
+    background-color: rgba(196, 196, 196, 1);
+    position: absolute;
+    right: 460px;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.tree-leaf2{
+    width: 530px;
+    height: 70px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.tree-leaf2 p{
+    width: 420px;
+    height: 48px;
+    margin-left: 56px;
+    margin-top: 10px;
+}
+.leaf2{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 36px 0px 36px;
+    background-color: rgba(196, 196, 196, 1);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tree-leaf3{
+    width: 530px;
+    height: 70px;
+    position: absolute;
+    top: 300px; 
+    right: 0;
+}
+
+.tree-leaf3 .leaf{
+    left: 0;
+    top: 0%;
+    transform: rotate(90deg);
+}
+
+.tree-leaf3 p{
+    width: 420px;
+    height: 48px;
+    margin-left: 86px;
+    margin-top: 10px;
+}
+.leaf3{
+    width: 70px;
+    height: 70px;
+    border-radius: 0px 36px 0px 36px;
+    background-color: rgba(196, 196, 196, 1);
+    position: absolute;
+    right: 460px;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.tree-leaf0:hover p, .tree-leaf1:hover p,
+.tree-leaf2:hover p, .tree-leaf3:hover p{
+    color: rgba(121, 179, 49, 1);
+}
+
+.tree-leaf0:hover div, .tree-leaf1:hover div,
+.tree-leaf2:hover div,.tree-leaf3:hover div{
+    background-color: rgba(121, 179, 49, 1);
+}
+
+
+@keyframes move{
+    0%{top: 0; left: 0;}
+    25%{top: 0; left: 388px;}
+    50%{top: 156px; left: 388px;}
+    75%{top: 156px; left: 0;}
+    100%{top: 0; left: 0;}
+}
+
+
+/* -----------------iPad----------------- */
+
+@media only screen and (max-width:1024px) {
+    header{
+        display: absolute;
+    }
+    header nav ul{
+        margin-right: 216px;
+    }
+    
+    body{
+        background-position: -200px;
+        position: relative;
+    }
+
+    .sale-count{
+        margin-right: 100px;
+    }
+
+    .tree{
+        width: 530px;
+        bottom: 0;
+        right: 100px;
+    }
+    .leaf1{
+        right: 0px;
+        transform: rotate(180deg);
+    }
+    .leaf3{
+        right: 0px;
+        transform: rotate(180deg);
+    }
+    .tree-leaf1 p{
+        margin-left: 40px;
+    }
+    .tree-leaf2 p{
+        margin-left: 30px;
+    }
+    .tree-leaf3 p{
+        margin-left: 30px;
+    }
+}
+
+/* ----------------mobile---------------- */
+
+@media only screen and (max-width:414px) {
+    body{
+        background-position: -400px;
+        position: relative;
+    }
+
+    header .fa-bars-icon{
+        display: block;
+        right: 0;
+    }
+
+    header nav ul{
+        visibility: hidden;
+    }
+    
+    .line{
+        visibility: hidden;
+    }
+    .tree{
+        text-align: center;
+        align-items: center;
+    }
+
+}
